@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="4b0dcd41935002106250fbf08bba1077" extends="task" label="Material" max_length="40" name="x_1312151_nowpro_0_material" type="collection"/>
+</database>
