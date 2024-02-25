@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="13e9dd8d935002106250fbf08bba10db" label="Tipo Material" max_length="40" name="x_1312151_nowpro_0_tipo_material" type="collection">
+        <element display="true" label="Tipo" max_length="40" name="tipo" type="string"/>
+    </element>
+</database>

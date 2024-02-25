@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_1312151_nowpro_0.nowProAula6</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description/>
+        <name>nowProAula6</name>
+        <script><![CDATA[var nowProAula6 = Class.create();
+nowProAula6.prototype = {
+    initialize: function() {},
+
+    atualizarEstoque: function(Material, Solicitante, Quantidade) {
+        var atualizarEstoquePorMaterial = new GlideRecord("x_1312151_nowpro_0_estoque_de_material");
+        atualizarEstoquePorMaterial.initialize();
+        atualizarEstoquePorMaterial.material = Material;
+        atualizarEstoquePorMaterial.solicitante = Solicitante;
+        atualizarEstoquePorMaterial.quantidade = Quantidade;
+
+        atualizarEstoquePorMaterial.insert();
+
+        return true;
+
+    },
+
+    type: 'nowProAula6'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-02-10 01:16:03</sys_created_on>
+        <sys_id>145c698193d002106250fbf08bba1006</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>nowProAula6</sys_name>
+        <sys_package display_value="NowPro Curse" source="x_1312151_nowpro_0">dd8b0901935002106250fbf08bba1038</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="NowPro Curse">dd8b0901935002106250fbf08bba1038</sys_scope>
+        <sys_update_name>sys_script_include_145c698193d002106250fbf08bba1006</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-02-10 01:16:03</sys_updated_on>
+    </sys_script_include>
+</record_update>

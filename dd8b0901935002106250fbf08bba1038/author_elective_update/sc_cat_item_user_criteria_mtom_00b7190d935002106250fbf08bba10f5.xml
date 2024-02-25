@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_user_criteria_mtom">
+    <sc_cat_item_user_criteria_mtom action="DELETE">
+        <sc_cat_item display_value="Solicitação de Material">5a955589935002106250fbf08bba10f9</sc_cat_item>
+        <sys_class_name>sc_cat_item_user_criteria_mtom</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-02-09 23:40:25</sys_created_on>
+        <sys_id>00b7190d935002106250fbf08bba10f5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Solicitação de Material.Any User</sys_name>
+        <sys_package display_value="NowPro Curse" source="x_1312151_nowpro_0">dd8b0901935002106250fbf08bba1038</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NowPro Curse">dd8b0901935002106250fbf08bba1038</sys_scope>
+        <sys_update_name>sc_cat_item_user_criteria_mtom_00b7190d935002106250fbf08bba10f5</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-02-09 23:40:25</sys_updated_on>
+        <user_criteria display_value="Any User">fb1166d64fff0200086eeed18110c7ab</user_criteria>
+    </sc_cat_item_user_criteria_mtom>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="NowPro Curse">dd8b0901935002106250fbf08bba1038</application>
+        <file_path/>
+        <instance_id>7d19e08edbe2f99c39639027c5961989</instance_id>
+        <instance_name>dev215234</instance_name>
+        <name>sc_cat_item_user_criteria_mtom_00b7190d935002106250fbf08bba10f5</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_user_criteria_mtom"><sc_cat_item_user_criteria_mtom action="INSERT_OR_UPDATE"><sc_cat_item display_value="Solicitação de Material">5a955589935002106250fbf08bba10f9</sc_cat_item><sys_class_name>sc_cat_item_user_criteria_mtom</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2024-02-09 23:40:25</sys_created_on><sys_id>00b7190d935002106250fbf08bba10f5</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Solicitação de Material.Any User</sys_name><sys_package display_value="NowPro Curse" source="x_1312151_nowpro_0">dd8b0901935002106250fbf08bba1038</sys_package><sys_policy/><sys_scope display_value="NowPro Curse">dd8b0901935002106250fbf08bba1038</sys_scope><sys_update_name>sc_cat_item_user_criteria_mtom_00b7190d935002106250fbf08bba10f5</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-02-09 23:40:25</sys_updated_on><user_criteria display_value="Any User">fb1166d64fff0200086eeed18110c7ab</user_criteria></sc_cat_item_user_criteria_mtom></record_update>]]></payload>
+        <payload_hash>1144790374</payload_hash>
+        <record_name>Solicitação de Material.Any User</record_name>
+        <reverted_from/>
+        <source>fdd1d185935002106250fbf08bba10d5</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-02-09 23:40:25</sys_created_on>
+        <sys_id>44b7190d935002106250fbf08bba10f9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18d903e67a50000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-02-09 23:40:25</sys_updated_on>
+        <type>Catalog Item Available for</type>
+        <update_guid>c4b7190d2e500210382af6075e5256f8</update_guid>
+        <update_guid_history>c4b7190d2e500210382af6075e5256f8:1144790374</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Solicitação de Material.Any User">0a38914d935002106250fbf08bba108c</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-02-09 23:42:44</sys_created_on>
+        <sys_db_object display_value="" name="sc_cat_item_user_criteria_mtom">sc_cat_item_user_criteria_mtom</sys_db_object>
+        <sys_id>0b0475d724064af6883f7122de2654e9</sys_id>
+        <sys_metadata>00b7190d935002106250fbf08bba10f5</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Solicitação de Material.Any User</sys_name>
+        <sys_package display_value="NowPro Curse" source="x_1312151_nowpro_0">dd8b0901935002106250fbf08bba1038</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="NowPro Curse">dd8b0901935002106250fbf08bba1038</sys_scope>
+        <sys_scope_delete display_value="">119260a9b88c4d03909f9986fab34f21</sys_scope_delete>
+        <sys_update_name>sc_cat_item_user_criteria_mtom_00b7190d935002106250fbf08bba10f5</sys_update_name>
+        <sys_update_version display_value="sc_cat_item_user_criteria_mtom_00b7190d935002106250fbf08bba10f5">44b7190d935002106250fbf08bba10f9</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-02-09 23:42:44</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

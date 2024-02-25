@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="10fc25c193d002106250fbf08bba10bf" label="Estoque de Material" max_length="40" name="x_1312151_nowpro_0_estoque_de_material" type="collection">
+        <element label="Material" max_length="32" name="material" reference="x_1312151_nowpro_0_material" type="reference"/>
+        <element label="Quantidade" max_length="40" name="quantidade" type="integer"/>
+        <element label="Soliciante" max_length="32" name="solicitante" reference="sys_user" type="reference"/>
+        <index name="index">
+            <element name="material"/>
+        </index>
+        <index name="index2">
+            <element name="solicitante"/>
+        </index>
+    </element>
+</database>

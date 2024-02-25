@@ -1,3 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element db_object_id="4b0dcd41935002106250fbf08bba1077" extends="task" label="Material" max_length="40" name="x_1312151_nowpro_0_material" type="collection"/>
+    <element db_object_id="4b0dcd41935002106250fbf08bba1077" extends="task" label="Material" max_length="40" name="x_1312151_nowpro_0_material" type="collection">
+        <element label="Email" max_length="250" name="email" type="string"/>
+        <element label="Material" max_length="32" name="material" reference="x_1312151_nowpro_0_tipo_material" type="reference"/>
+        <element label="Quantidade" max_length="40" name="quantidade" type="integer"/>
+        <element label="Solicitante" max_length="32" name="solicitante" reference="sys_user" type="reference"/>
+        <element label="Tipo de Material" max_length="32" name="tipo_de_material" reference="x_1312151_nowpro_0_tipo_material" type="reference"/>
+    </element>
 </database>
