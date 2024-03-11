@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_1312151_nowpro_0.NowProCurse</api_name>
+        <caller_access/>
+        <client_callable>true</client_callable>
+        <description/>
+        <name>NowProCurse</name>
+        <script><![CDATA[var NowProCurse = Class.create();
+NowProCurse.prototype = {
+    initialize: function() {},
+
+    apiNowProCurse: function() {
+
+        var obterChuckNorris = new sn_ws.RESTMessageV2();
+        obterChuckNorris.setEndpoint("https://api.chucknorris.io/jokes/random");
+        obterChuckNorris.setHttpMethod("GET");
+
+        var response = obterChuckNorris.execute();
+        var body = response.getBody();
+
+        body = JSON.parse(body);
+        gs.info("Informações ChuckNorris: " + body.value);
+
+    },
+
+    infoCep: function() {
+
+        var pegaCep = new sn_ws.RESTMessageV2('x_1312151_nowpro_1.ApiViaCep', 'Default GET');
+        pegaCep.setStringParameterNoEscape('cep', '26193325');
+
+
+        var response = pegaCep.execute();
+        var responseBody = response.getBody();
+
+        responseBody = JSON.parse(responseBody);
+
+        var httpStatus = response.getStatusCode();
+        gs.info(responseBody.bairro);
+
+    },
+
+
+    starWars: function(id) {
+
+        var obterInfoPersonagem = new sn_ws.RESTMessageV2();
+        obterInfoPersonagem.setEndpoint("https://swapi.py4e.com/api/people/" + id);
+        obterInfoPersonagem.setHttpMethod("GET");
+
+        var response = obterInfoPersonagem.execute();
+
+        if (response.getStatusCode() == "200") {
+            var dados = response.getBody();
+            dados = JSON.parse(dados);
+
+
+            var world = this.starWarsWorld(id);
+
+            gs.info("Status Code = " + response.getStatusCode());
+            gs.info("Nome = " + dados.name);
+            gs.info("Height = " + dados.height);
+            gs.info("Mass = " + dados.mass);
+            gs.info("Eye_color = " + dados.eye_color);
+            gs.info("Gender = " + dados.gender);
+            gs.info("Homeworld = " + world);
+        } else {
+            gs.info("error " + response.getErrorCode() + " - " + response.getErrorMessage());
+        }
+    },
+
+    starWarsWorld: function(id) {
+
+
+        var obterhomeworld = new sn_ws.RESTMessageV2();
+        obterhomeworld.setEndpoint("https://swapi.py4e.com/api/planets/" + id);
+        obterhomeworld.setHttpMethod("GET");
+
+        var responseWorld = obterhomeworld.execute();
+        if (responseWorld.getStatusCode() == "200") {
+            var dadosWorld = responseWorld.getBody();
+            dadosWorld = JSON.parse(dadosWorld);
+
+            return dadosWorld.name;
+        } else {
+            gs.info("error " + responseWorld.getErrorCode() + " - " + responseWorld.getErrorMessage());
+        }
+    
+    },
+
+    type: 'NowProCurse'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-03-11 18:05:40</sys_created_on>
+        <sys_id>6e54373e97704610d530f5b0f053af10</sys_id>
+        <sys_mod_count>13</sys_mod_count>
+        <sys_name>NowProCurse</sys_name>
+        <sys_package display_value="NowPro Curse" source="x_1312151_nowpro_0">dd8b0901935002106250fbf08bba1038</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="NowPro Curse">dd8b0901935002106250fbf08bba1038</sys_scope>
+        <sys_update_name>sys_script_include_6e54373e97704610d530f5b0f053af10</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-03-11 19:32:38</sys_updated_on>
+    </sys_script_include>
+</record_update>
